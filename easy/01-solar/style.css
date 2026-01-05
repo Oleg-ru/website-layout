@@ -41,6 +41,16 @@
     transform: rotateY(180deg);
 }
 
+/*Меняем цвет через фильтр т.к это SVG color не работает*/
+.arrow__img-left:hover,
+.arrow__img-right:hover {
+    filter:
+            invert(70%)
+            sepia(20%)
+            saturate(800%)
+            hue-rotate(15deg);
+}
+
 /**********************************************************************************************************************/
 /*Header*/
 .cover {
@@ -253,4 +263,29 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--color-black);
+}
+
+/*Quote*/
+
+.quote {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+}
+
+.quote__background-img {
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+}
+
+.quote__text {
+    width: 40%;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    color: var(--color-white);
 }
