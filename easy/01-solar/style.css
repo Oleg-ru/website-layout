@@ -51,6 +51,35 @@
             hue-rotate(15deg);
 }
 
+/*cover button*/
+.consultation {
+    margin-top: 50px;
+}
+
+.cover__consultation-button {
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.consultation-button:hover {
+    background-color: var(--color-hover);
+    border-radius: 50%;
+}
+
+.consultation-description {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    color: var(--color-white);
+}
+
+.consultation-description-black {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    color: var(--color-black);
+}
+
 /**********************************************************************************************************************/
 /*Header*/
 .cover {
@@ -95,28 +124,6 @@
     font-family: var(--font-family), sans-serif;
     font-weight: 400;
     font-size: 42px;
-    color: var(--color-white);
-}
-
-/*cover button*/
-.cover__consultation {
-    margin-top: 50px;
-}
-
-.cover__consultation-button {
-    transition: background-color 0.3s ease-in-out;
-    border-radius: 50%;
-}
-
-.cover__consultation-button:hover {
-    background-color: var(--color-hover);
-    border-radius: 50%;
-}
-
-.cover__consultation-description {
-    position: relative;
-    top: -50px;
-    left: 50px;
     color: var(--color-white);
 }
 
@@ -288,4 +295,43 @@
     font-size: 42px;
     text-align: center;
     color: var(--color-white);
+}
+
+/*Our clients*/
+
+.our-client__arrow-container {
+    margin-top: 32px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.our-client__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-client__text-title {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.our-client__text-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-left: 50px;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-black);
+
+}
+
+.our-client__list-item {
+    list-style: none;
 }
