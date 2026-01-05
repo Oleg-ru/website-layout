@@ -67,6 +67,7 @@
 }
 
 .consultation-description {
+    width: max-content;
     position: relative;
     top: -50px;
     left: 50px;
@@ -363,4 +364,65 @@
     font-weight: 400;
     font-size: 14px;
     color: var(--color-black);
+}
+
+/*Footer*/
+.content-container-footer {
+    width:70vw;
+    margin: 150px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "req contacts"
+            "bottom bottom";
+    row-gap: 130px;
+}
+
+.footer__request-container, .footer__contacts-container {
+    width: 50%;
+}
+
+.footer__request-container {
+    grid-area: req;
+}
+
+.footer__contacts-container {
+    grid-area: contacts;
+}
+
+.footer {
+    position: relative;
+    margin-bottom: 0;
+    font-family: var(--font-family), sans-serif;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__form {
+    position: relative;
+}
+
+.footer__background-img {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+}
+
+.footer__socmedia {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__socmedia img {
+    cursor: pointer;
+    width: 29px;
+}
+
+.footer__bottom-container {
+    grid-area: bottom;
+    align-self: end;
+    display: flex;
+    justify-content: space-between;
 }
