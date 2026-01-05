@@ -335,3 +335,32 @@
 .our-client__list-item {
     list-style: none;
 }
+
+/*Steps*/
+
+.steps__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.steps__step {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.steps__text-title {
+    margin-top: 11px;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-gray);
+}
+
+.steps__text-description {
+    margin-top: 2px;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-black);
+}
