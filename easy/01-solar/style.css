@@ -22,6 +22,25 @@
     margin: 150px auto;
 }
 
+/*General*/
+
+.section__content {
+    display: flex;
+    column-gap: 50px;
+}
+
+.content-container__title {
+    margin-bottom: 60px;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-gray);
+}
+
+.arrow__img-right {
+    transform: rotateY(180deg);
+}
+
 /**********************************************************************************************************************/
 /*Header*/
 .cover {
@@ -99,6 +118,10 @@
     position: relative;
     top: 155px;
 }
+
+.cover__socmedia img {
+    cursor: pointer;
+}
 /**********************************************************************************************************************/
 /*Services*/
 
@@ -108,11 +131,6 @@
     font-weight: 700;
     font-size: 24px;
     color: var(--color-gray);
-}
-
-.services__content {
-    display: flex;
-    column-gap: 50px;
 }
 
 .services__text-container {
@@ -153,4 +171,86 @@
 }
 
 /**********************************************************************************************************************/
-/**/
+/*Tariff*/
+
+.tariff__text-container {
+    width: 50%;
+}
+
+.tariff__img-container {
+    width: 50%;
+}
+
+.tariff__cost-description-container {
+    height: 100%;
+}
+
+.tariff__tabs-container {
+    display: flex;
+    column-gap: 40px;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.tariff__tabs_active {
+    border-bottom: 1px solid var(--color-black);
+}
+
+.tariff__cost-container {
+    display: flex;
+    margin-top: 120px;
+}
+
+.tariff__img-cost-container {
+    margin-right: 40px;
+}
+
+.tariff__text-desk {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.tariff__conditions-container {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.tariff__condition {
+    width: 45%;
+}
+
+.tariff__condition-title {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.tariff__condition-description {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-black);
+
+}
+
+.arrow-container {
+    display: flex;
+    column-gap: 22px;
+    margin-top: 110px;
+}
+
+.tariff__img-description {
+    margin-bottom: 17px;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-black);
+}
