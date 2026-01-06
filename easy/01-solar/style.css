@@ -355,7 +355,7 @@
     font-family: var(--font-family), sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: var(--color-gray);
+    color: var(--color-black);
 }
 
 .steps__text-description {
@@ -369,17 +369,22 @@
 /*Footer*/
 .content-container-footer {
     width:70vw;
-    margin: 150px auto 0 auto;
+    margin: 60px auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
             "req contacts"
             "bottom bottom";
-    row-gap: 130px;
 }
 
 .footer__request-container, .footer__contacts-container {
-    width: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-white);
 }
 
 .footer__request-container {
@@ -404,6 +409,10 @@
     position: relative;
 }
 
+.footer__form > * {
+    margin-top: 60px;
+}
+
 .footer__background-img {
     position: absolute;
     z-index: -999;
@@ -421,8 +430,33 @@
 }
 
 .footer__bottom-container {
+    width: 100%;
     grid-area: bottom;
     align-self: end;
     display: flex;
     justify-content: space-between;
+    padding-top: 70px;
+}
+
+.footer__label {
+    display: block;
+}
+
+.footer__input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--color-white);
+    background-color: inherit;
+    font-family: var(--font-family), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer__input::placeholder {
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.footer__contacts-item {
+    margin-top: 30px;
 }
