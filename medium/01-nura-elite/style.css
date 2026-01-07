@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Fira Sans", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+
+    --color-white: #fff;
+    --color-black: #333;;
+    --color-brown: #dba069;
+}
+
+/*Fonts*/
+.fira-sans-bold {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.fira-sans-light {
+    font-family: var(--font-family);
+    font-weight: 300;
+    color: var(--color-black);
+}
+
+.fira-sans-regular {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.fira-sans-medium {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.gotham-pro-bold {
+    font-family: var(--second-family);
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+/*General*/
+.content-container {
+    border: 1px solid red;
+    margin: 0 130px;
+}
+
+/*Header*/
+.header {
+    position: relative;
+    height: 100%;
+}
+
+.header__background-img {
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+}
