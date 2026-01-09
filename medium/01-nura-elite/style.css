@@ -53,12 +53,18 @@
 /*General*/
 .content-container {
     margin: 0 130px;
+    position: relative;
+    z-index: 2;
 }
 
 /*Header*/
 .header {
     position: relative;
-    height: 100%;
+    min-height: 70vh;
+    background-image: url('public/header/header-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--color-white);
     font-family: var(--font-family);
 }
@@ -215,4 +221,16 @@
     display: flex;
     justify-content: flex-start;
     gap: 20px;
+}
+
+/*About project*/
+
+.about-project {
+
+}
+
+main {
+    position: relative;
+    z-index: 3;
+    background: white;
 }
